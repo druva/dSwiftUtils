@@ -1,0 +1,16 @@
+PODS:
+  - dSwiftUtils (0.0.1)
+
+DEPENDENCIES:
+  - dSwiftUtils (from `../`)
+
+EXTERNAL SOURCES:
+  dSwiftUtils:
+    :path: ../
+
+SPEC CHECKSUMS:
+  dSwiftUtils: 7338ee5de3d483b8385cdbad29d077d1cb7bc88c
+
+PODFILE CHECKSUM: fe729e65d5b9c7d90d35be43b78662f79e5f11fb
+
+COCOAPODS: 1.0.0.beta.8

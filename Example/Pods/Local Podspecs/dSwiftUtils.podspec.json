@@ -1,0 +1,24 @@
+{
+  "name": "dSwiftUtils",
+  "version": "0.0.1",
+  "summary": "A very short description of dSwiftUtils.",
+  "description": "A goes very very short description of dSwiftUtils.",
+  "homepage": "https://github.com/druva/dSwiftUtils",
+  "license": "MIT",
+  "authors": {
+    "Druva": "druva.yarlagadda@valuelabs.com"
+  },
+  "source": {
+    "git": "https://github.com/druva/dSwiftUtils.git",
+    "tag": "0.0.1"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "dSwiftUtils/Classes/**/*",
+  "resource_bundles": {
+    "dSwiftUtils": [
+      "dSwiftUtils/Assets/*.png"
+    ]
+  }
+}
