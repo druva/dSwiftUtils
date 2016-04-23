@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'dSwiftUtils/Classes/**/*'
+  s.source_files = 'dSwiftUtils/Classes/**/*', 'dSwiftUtils/Classes/Extensions/**/*', 'dSwiftUtils/Classes/Utilities/**/*'
   s.resource_bundles = {
     'dSwiftUtils' => ['dSwiftUtils/Assets/*.png']
   }
