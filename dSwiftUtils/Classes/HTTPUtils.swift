@@ -60,7 +60,7 @@ public class HTTPRequest {
                     }
                 }
                 if let date = responseHeaderFields["date"] {
-                    //print("responseHeaderFields \(date)")
+                    print("responseHeaderFields \(date)")
                 }
                 //print("response.statusCode \(response.statusCode)")
                 //print("responseHeaderFields \(responseHeaderFields)")
