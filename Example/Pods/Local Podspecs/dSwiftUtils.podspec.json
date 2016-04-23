@@ -1,6 +1,6 @@
 {
   "name": "dSwiftUtils",
-  "version": "0.0.4",
+  "version": "0.0.6",
   "summary": "A very short description of dSwiftUtils.",
   "description": "A goes very very short description of dSwiftUtils.",
   "homepage": "https://github.com/druva/dSwiftUtils",
@@ -10,12 +10,12 @@
   },
   "source": {
     "git": "https://github.com/druva/dSwiftUtils.git",
-    "tag": "0.0.4"
+    "tag": "0.0.6"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "dSwiftUtils/Classes/**/*",
+  "source_files": "dSwiftUtils/Classes/**/*, dSwiftUtils/Classes/Extensions/**/*, dSwiftUtils/Classes/Utilities/**/*",
   "resource_bundles": {
     "dSwiftUtils": [
       "dSwiftUtils/Assets/*.png"
