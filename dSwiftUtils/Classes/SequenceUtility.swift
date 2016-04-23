@@ -9,6 +9,7 @@
 import Foundation
 
 public class Sequence {
+    public init(){}
     public var sequenceName:String = ""
     public var sequenceTasks = [SequenceTask]()
     private var index = 0;
@@ -43,6 +44,7 @@ public class Sequence {
 }
 
 public class Schedular {
+    public init(){}
     static func scheduleTask(task:Task, priority:QueuePriority = .Default){
         dispatch_async(dispatch_get_global_queue(QueueUtility.getQueueId(priority), 0)) {
             task.execute()
@@ -63,6 +65,7 @@ public class SequenceTask: Task {
 }
 
 public class Task {
+    public init(){}
     public func execute() {
         print("You must override this method")
     }
