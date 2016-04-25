@@ -3,7 +3,7 @@
 //  Pods
 //
 //  Created by DRUVAKANTH YARLAGADDA on 4/23/16.
-//
+//  Copyright © 2016 Druva Yarlagadda. All rights reserved.
 //
 
 import Foundation
@@ -11,7 +11,7 @@ import Foundation
 
 public protocol HTTPErrorPolicyDelegate {
     init()
-    func processHttpError()
+    func processHttpError(request:NSMutableURLRequest, error:NSError?)
 }
 
 
@@ -72,6 +72,7 @@ public class HTTPRequest {
             } else {
                 returnValue = "error"
                 dispatch_semaphore_signal(semaphore)
+                errorPolicy.processHttpError(request, error: resultError)
                 callback(statusCode: -1, headerFields: nil, body: nil, error: resultError)
             }
         }

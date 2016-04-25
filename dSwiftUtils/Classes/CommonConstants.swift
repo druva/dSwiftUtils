@@ -9,3 +9,4 @@
 import Foundation
 
 public typealias voidCallback = ()->Void
+public typealias callbackWithStatus = (status:Bool)->Void

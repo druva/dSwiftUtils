@@ -19,7 +19,7 @@ public class Sequence {
         self.sequenceTasks = tasks
     }
     public func start() {
-        print("Sequence.start() \(sequenceName)")
+        print("Sequence.start() name: \(sequenceName)")
         index = 0
         executeNextAvailableTask()
     }

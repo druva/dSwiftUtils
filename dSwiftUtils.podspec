@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "dSwiftUtils"
-  s.version          = "0.1.8"
+  s.version          = "0.1.9"
   s.summary          = "A very short description of dSwiftUtils."
 
 # This description is used to generate tags and improve search results.
@@ -22,7 +22,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://github.com/druva/dSwiftUtils"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
-  s.author           = { "Druva" => "druva.yarlagadda@valuelabs.com" }
+  s.author           = { "Druva" => "druva.yarlagadda@gmail.com" }
   s.source           = { :git => "https://github.com/druva/dSwiftUtils.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/druva'
 
