@@ -55,28 +55,28 @@ extension String {
     }
     
     /**
-     <#Description#>
+     Description
      
-     - parameter from: <#from description#>
+     - parameter from: Position/Index
      
-     - returns: <#return value description#>
+     - returns: string
      */
     
-    func substring(from: Int) -> String {
+    public func substring(from: Int) -> String {
         return self.substringFromIndex(self.startIndex.advancedBy(from))
     }
     
     /**
-     <#Description#>
+     Return class name for provided string
      
-     - parameter aClass: <#aClass description#>
+     - parameter aClass: Any Class
      
-     - returns: <#return value description#>
+     - returns: String
      */
-    static func className(aClass: AnyClass) -> String {
+    public static func className(aClass: AnyClass) -> String {
         return NSStringFromClass(aClass).componentsSeparatedByString(".").last!
     }
-    
+
     public func matches(pattern: String, ignoreCase: Bool = false) -> [NSTextCheckingResult]? {
         if let regex = NSRegularExpression.regex(pattern, ignoreCase: ignoreCase) {
             let range = NSRange(location: 0, length: length())
@@ -87,7 +87,7 @@ extension String {
     
     public func contains(pattern: String, ignoreCase: Bool = false) -> Bool? {
         if let regex = NSRegularExpression.regex(pattern, ignoreCase: ignoreCase) {
-            let range = NSRange(location: 0, length: self.characters.count)
+            let range = NSRange(location: 0, length: length())
             return regex.firstMatchInString(self, options: [], range: range) != nil
         }
         return nil
@@ -95,7 +95,7 @@ extension String {
     
     public func replace(pattern: String, withString replacementString: String, ignoreCase: Bool = false) -> String? {
         if let regex = NSRegularExpression.regex(pattern, ignoreCase: ignoreCase) {
-            let range = NSRange(location: 0, length: self.characters.count)
+            let range = NSRange(location: 0, length: length())
             return regex.stringByReplacingMatchesInString(self, options: [], range: range, withTemplate: replacementString)
         }
         return nil
