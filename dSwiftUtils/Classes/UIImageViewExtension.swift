@@ -11,7 +11,7 @@ import UIKit
 
 extension UIImageView {
     
-    func setRandomDownloadImage4Testing(width: Int, height: Int) {
+    public func setRandomDownloadImage4Testing(width: Int, height: Int) {
         if self.image != nil {
             self.alpha = 1
             return
@@ -46,7 +46,7 @@ extension UIImageView {
         task.resume()
     }
     
-    func clipParallaxEffect(baseImage: UIImage?, screenSize: CGSize, displayHeight: CGFloat) {
+    public func clipParallaxEffect(baseImage: UIImage?, screenSize: CGSize, displayHeight: CGFloat) {
         if let baseImage = baseImage {
             if displayHeight < 0 {
                 return

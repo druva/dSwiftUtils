@@ -1,6 +1,6 @@
 {
   "name": "dSwiftUtils",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "summary": "A very short description of dSwiftUtils.",
   "description": "A goes very very short description of dSwiftUtils.",
   "homepage": "https://github.com/druva/dSwiftUtils",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/druva/dSwiftUtils.git",
-    "tag": "0.2.1"
+    "tag": "0.2.2"
   },
   "platforms": {
     "ios": "8.0"
