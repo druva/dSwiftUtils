@@ -8,16 +8,16 @@
 
 import Foundation
 
-class MiniSequencer {
+public class MiniSequencer {
     //    private var _updateSequence = [voidCallback]()
     private var _index = 0
     private var _seq:[voidCallback]?
     private var _callback:voidCallback?
     private var _completionCallback:callbackWithStatus?
-    init() {
+    public init() {
     }
     
-    func startSeq(seq:[voidCallback], completionCallback:callbackWithStatus) {
+    public func startSeq(seq:[voidCallback], completionCallback:callbackWithStatus) {
         _index = 0
         _seq = seq
         _callback = {
@@ -29,7 +29,7 @@ class MiniSequencer {
         }
         _callback!()
     }
-    func taskFinished(status:Bool){
+    public func taskFinished(status:Bool){
         if status {
             _index++
             _callback!()
@@ -40,8 +40,8 @@ class MiniSequencer {
     }
 }
 
-class TestMiniSequencer {
-    init(){
+public class TestMiniSequencer {
+    public init(){
         let a = MiniSequencer()
         
         var seq = [voidCallback]()
@@ -58,7 +58,7 @@ class TestMiniSequencer {
         }
     }
     
-    func update(name:String, callback:callbackWithStatus ){
+    public func update(name:String, callback:callbackWithStatus ){
         print(name)
         callback(status: true)
     }
