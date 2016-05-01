@@ -22,12 +22,11 @@ public typealias ResponseDataCallback = (statusCode:Int, headerFields:[String:St
 public class HTTPRequest {
     public init(){}
     
-    public static func processRequest(url:String, headerFields:[String:String?]?)->NSMutableURLRequest {
+    public static func processRequest(url:String, method:String, postString:String?, headerFields:[String:String?]?)->NSMutableURLRequest {
         let request = NSMutableURLRequest(URL: NSURL(string: url)!)
-        request.HTTPMethod = "GET"
-        let postString = "id=13&name=Jack"
-        if request.HTTPMethod == "POST" {
-            request.HTTPBody = postString.dataUsingEncoding(NSUTF8StringEncoding)
+        request.HTTPMethod = method
+        if let s = postString where request.HTTPMethod == "POST" {
+            request.HTTPBody = s.dataUsingEncoding(NSUTF8StringEncoding)
         }
         // update header fields
         if let headers = headerFields {

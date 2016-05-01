@@ -8,7 +8,6 @@
 
 import UIKit
 
-
 extension UIImageView {
     
     public func setRandomDownloadImage4Testing(width: Int, height: Int) {

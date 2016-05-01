@@ -21,6 +21,8 @@
 		79919C7B1CD1455C00830989 /* UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79919C7A1CD1455C00830989 /* UIImage.swift */; };
 		79919C7D1CD1464E00830989 /* UIStoryboardExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79919C7C1CD1464E00830989 /* UIStoryboardExtension.swift */; };
 		79C604E41CCB1476009A8132 /* CommonConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C604E31CCB1476009A8132 /* CommonConstants.swift */; };
+		79CD057F1CD575C10088D702 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD057E1CD575C10088D702 /* UITableViewExtension.swift */; };
+		79CD05831CD582FE0088D702 /* MiniSequencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79CD05821CD582FE0088D702 /* MiniSequencer.swift */; };
 		79FBAB681CCE95F40093DFB5 /* HTTPStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79FBAB671CCE95F40093DFB5 /* HTTPStatus.swift */; };
 		82174E4564FBA316D3F4410D9543FB28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
 		90819E7F213428C190457F063CEBFB60 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3997E5D2953ECDF377B85B234FDF550D /* Foundation.framework */; };
@@ -69,6 +71,8 @@
 		79919C7A1CD1455C00830989 /* UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImage.swift; sourceTree = "<group>"; };
 		79919C7C1CD1464E00830989 /* UIStoryboardExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIStoryboardExtension.swift; sourceTree = "<group>"; };
 		79C604E31CCB1476009A8132 /* CommonConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonConstants.swift; sourceTree = "<group>"; };
+		79CD057E1CD575C10088D702 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
+		79CD05821CD582FE0088D702 /* MiniSequencer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MiniSequencer.swift; sourceTree = "<group>"; };
 		79FBAB671CCE95F40093DFB5 /* HTTPStatus.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPStatus.swift; sourceTree = "<group>"; };
 		84100E25F9D5CEFB8238053D8B52FED2 /* Pods_dSwiftUtils_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_dSwiftUtils_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8B0789C46FF98D885BF00B722DB30016 /* dSwiftUtils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dSwiftUtils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,11 +211,13 @@
 				79919C7A1CD1455C00830989 /* UIImage.swift */,
 				79919C7C1CD1464E00830989 /* UIStoryboardExtension.swift */,
 				79919C781CD144CD00830989 /* UIImageViewExtension.swift */,
+				79CD057E1CD575C10088D702 /* UITableViewExtension.swift */,
 				797DE7E31CCEEBC5002E033D /* UIColorExtension.swift */,
 				791A3F6A1CC9D40900E30F62 /* IntExtension.swift */,
 				791A3F6C1CC9E58800E30F62 /* StringExtension.swift */,
 				793AFEB21CCB2864006D706B /* QueueUtility.swift */,
 				79C604E31CCB1476009A8132 /* CommonConstants.swift */,
+				79CD05821CD582FE0088D702 /* MiniSequencer.swift */,
 				795D7D991CCB5C9F00A7CCC0 /* SequenceUtility.swift */,
 				797DE7E51CCEEF08002E033D /* NSRegularExpression.swift */,
 				794D62E01CCBCDC8000B4A1A /* HTTPUtils.swift */,
@@ -383,6 +389,8 @@
 				79FBAB681CCE95F40093DFB5 /* HTTPStatus.swift in Sources */,
 				795D7D9A1CCB5C9F00A7CCC0 /* SequenceUtility.swift in Sources */,
 				797DE7E61CCEEF08002E033D /* NSRegularExpression.swift in Sources */,
+				79CD05831CD582FE0088D702 /* MiniSequencer.swift in Sources */,
+				79CD057F1CD575C10088D702 /* UITableViewExtension.swift in Sources */,
 				79919C7D1CD1464E00830989 /* UIStoryboardExtension.swift in Sources */,
 				794D62E11CCBCDC8000B4A1A /* HTTPUtils.swift in Sources */,
 				CFA061F9D371E2087ADA4E8F9C7F767F /* dSwiftUtils-dummy.m in Sources */,
