@@ -1,8 +1,0 @@
-use_frameworks!
-
-
-target 'dSwiftUtils_Tests' do
-  pod 'dSwiftUtils', :path => '../'
-
-  
-end

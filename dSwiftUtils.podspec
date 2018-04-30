@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "dSwiftUtils"
-  s.version          = "0.2.5"
+  s.version          = "0.2.6"
   s.summary          = "A very short description of dSwiftUtils."
 
 # This description is used to generate tags and improve search results.
@@ -26,7 +26,10 @@ Pod::Spec.new do |s|
   s.source           = { :git => "https://github.com/druva/dSwiftUtils.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/druva'
 
-  s.ios.deployment_target = '8.0'
+  s.ios.deployment_target = '10.0'
+  s.tvos.deployment_target = "10.1"
+
+  s.swift_version = '4.0'
 
   s.source_files = 'dSwiftUtils/Classes/**/*'
   s.resource_bundles = {
