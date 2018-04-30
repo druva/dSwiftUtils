@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA4CBAD12096A25E003CDB70 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBACF2096A25E003CDB70 /* IntExtensions.swift */; };
+		DA4CBAD22096A25E003CDB70 /* IntExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBACF2096A25E003CDB70 /* IntExtensions.swift */; };
+		DA4CBAD32096A25E003CDB70 /* SomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBAD02096A25E003CDB70 /* SomeTest.swift */; };
+		DA4CBAD42096A25E003CDB70 /* SomeTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4CBAD02096A25E003CDB70 /* SomeTest.swift */; };
 		DAAF49AD20969CED00746B7E /* dSwiftUtils_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAAF49AB20969CED00746B7E /* dSwiftUtils_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAAF49BA20969CFF00746B7E /* dSwiftUtils_iOS.h in Headers */ = {isa = PBXBuildFile; fileRef = DAAF49B820969CFF00746B7E /* dSwiftUtils_iOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA4CBACF2096A25E003CDB70 /* IntExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntExtensions.swift; sourceTree = "<group>"; };
+		DA4CBAD02096A25E003CDB70 /* SomeTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SomeTest.swift; sourceTree = "<group>"; };
 		DAAF499C20969C8F00746B7E /* dSwiftUtils.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = dSwiftUtils.h; sourceTree = "<group>"; };
 		DAAF499D20969C8F00746B7E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DAAF49A920969CED00746B7E /* dSwiftUtils_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = dSwiftUtils_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -40,10 +46,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DA4CBACE2096A25E003CDB70 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DA4CBACF2096A25E003CDB70 /* IntExtensions.swift */,
+				DA4CBAD02096A25E003CDB70 /* SomeTest.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
 		DAAF498F20969C8F00746B7E = {
 			isa = PBXGroup;
 			children = (
 				DAAF499B20969C8F00746B7E /* dSwiftUtils */,
+				DA4CBACE2096A25E003CDB70 /* Shared */,
 				DAAF49AA20969CED00746B7E /* dSwiftUtils-tvOS */,
 				DAAF49B720969CFF00746B7E /* dSwiftUtils-iOS */,
 				DAAF499A20969C8F00746B7E /* Products */,
@@ -203,6 +219,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4CBAD12096A25E003CDB70 /* IntExtensions.swift in Sources */,
+				DA4CBAD32096A25E003CDB70 /* SomeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -210,6 +228,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA4CBAD22096A25E003CDB70 /* IntExtensions.swift in Sources */,
+				DA4CBAD42096A25E003CDB70 /* SomeTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
