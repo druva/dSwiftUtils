@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "dSwiftUtils"
-  s.version          = "0.2.6"
+  s.version          = "0.2.7"
   s.summary          = "A very short description of dSwiftUtils."
 
 # This description is used to generate tags and improve search results.
@@ -31,10 +31,10 @@ Pod::Spec.new do |s|
 
   s.swift_version = '4.0'
 
-  s.source_files = 'dSwiftUtils/Classes/**/*'
-  s.resource_bundles = {
-    'dSwiftUtils' => ['dSwiftUtils/Assets/*.png']
-  }
+  s.source_files = 'dSwiftUtils/Classes/**/*', "Shared", "MobiCore-iOS", "MobiCore-tvOS"
+ #s.resource_bundles = {
+ #   'dSwiftUtils' => ['dSwiftUtils/Assets/*.png']
+ # }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit'
